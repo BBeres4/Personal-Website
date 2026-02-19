@@ -498,6 +498,10 @@ footer {
 }
 
 .page-about .about-skill-grid {
+  text-align: left;
+}
+
+.page-about .about-skill-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 22px;
@@ -564,4 +568,5 @@ footer {
     height: 32px;
   }
 }
+
 
