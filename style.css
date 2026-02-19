@@ -493,6 +493,7 @@ footer {
 }
 
 .page-about .about-section {
+  text-align: center;
   margin-top: 46px;
 }
 
@@ -563,3 +564,4 @@ footer {
     height: 32px;
   }
 }
+
