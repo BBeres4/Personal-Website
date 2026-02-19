@@ -461,5 +461,154 @@ footer {
   }
 }
 
+/* ================= ABOUT PAGE ONLY ================= */
+.page-about .about-hero {
+  text-align: left;
+  margin-bottom: 26px;
+}
+
+.page-about .about-hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.page-about .about-hero p {
+  font-size: 18px;
+  color: #666;
+  max-width: 780px;
+}
+
+.page-about .about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  margin-top: 25px;
+}
+
+.page-about .about-card {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.page-about .about-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0,0,0,0.12);
+}
+
+.page-about .about-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.page-about .about-badge {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #f1f4f9;
+  color: #333;
+  font-weight: 700;
+}
+
+.page-about .about-icon {
+  font-size: 22px;
+}
+
+.page-about .about-card h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.page-about .about-card p {
+  font-size: 15.5px;
+  color: #666;
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+
+.page-about .about-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.page-about .about-chips span {
+  background: #eef2f7;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12.5px;
+  color: #333;
+  transition: 0.2s ease;
+}
+
+.page-about .about-chips span:hover {
+  background: #e8f6ff;
+}
+
+.page-about .about-section {
+  margin-top: 46px;
+}
+
+.page-about .about-section h2 {
+  font-size: 34px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.page-about .about-section p {
+  color: #666;
+  margin-bottom: 18px;
+}
+
+.page-about .about-skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+  margin-top: 12px;
+}
+
+.page-about .skill-card {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+}
+
+.page-about .skill-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.page-about .skill-card ul {
+  padding-left: 18px;
+  color: #555;
+  font-size: 15px;
+}
+
+.page-about .skill-card li {
+  margin-bottom: 7px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .page-about .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-about .about-hero h1 {
+    font-size: 42px;
+  }
+}
+
 
 
