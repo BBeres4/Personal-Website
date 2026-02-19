@@ -6,10 +6,12 @@
   <title>Contact - Myself</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+
+<body class="page-contact">
 
 <header>
   <div class="logo">Myself</div>
+
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -19,44 +21,64 @@
       <li><a href="contact.html" class="active">Contact</a></li>
     </ul>
   </nav>
+
   <div class="header-icons">
-    <img src="globe.png" alt="Globe" />
-    <img src="twitter.png" alt="Twitter" />
-    <img src="youtube.png" alt="YouTube" />
+    <!-- FIX: use your images folder like your other pages -->
+    <a href="#"><img src="images/globe.png" alt="Globe" /></a>
+    <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+    <a href="#"><img src="images/youtube.png" alt="YouTube" /></a>
   </div>
 </header>
 
-<div class="content">
-  <h1><center>Contact Me</center></h1>
-  <p><center>I'd love to hear from you! Feel free to reach out using any method below.</center></p>
+<section class="content contact">
+  <div class="contact-hero">
+    <h1>Contact Me</h1>
+    <p>I’d love to hear from you — choose any method below and I’ll get back to you.</p>
+  </div>
 
-  <div class="projects-grid">
+  <div class="contact-grid">
 
-    <!-- Email Card -->
-    <a href="mailto:benberes4@gmail.com" class="project-card">
-      <h2>Email</h2>
-      <p>Email benberes4@gmail.com</p>
+    <!-- Email -->
+    <a href="mailto:benberes4@gmail.com" class="contact-card">
+      <div class="contact-icon">✉️</div>
+      <div class="contact-info">
+        <h2>Email</h2>
+        <p>benberes4@gmail.com</p>
+      </div>
+      <div class="contact-action">Send Email →</div>
     </a>
 
-    <!-- LinkedIn Card -->
-    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="project-card">
-      <h2>LinkedIn</h2>
-      <p>Click here to view my LinkedIn!</p>
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/benjamin-beres-11761126a/" target="_blank" class="contact-card">
+      <div class="contact-icon">💼</div>
+      <div class="contact-info">
+        <h2>LinkedIn</h2>
+        <p>View my profile and connect</p>
+      </div>
+      <div class="contact-action">Open LinkedIn →</div>
     </a>
 
-    <!-- Resume Card -->
-    <a href="https://twitter.com/yourhandle" target="_blank" class="project-card">
-      <h2>Resume</h2>
-      <p>Click here to view my resume!</p>
+    <!-- Resume -->
+    <!-- Put your resume file in your project, e.g. /resume.pdf -->
+    <a href="resume.pdf" target="_blank" class="contact-card">
+      <div class="contact-icon">📄</div>
+      <div class="contact-info">
+        <h2>Resume</h2>
+        <p>Download / view my resume</p>
+      </div>
+      <div class="contact-action">View Resume →</div>
     </a>
 
   </div>
-</div>
+
+  <div class="contact-footer-note">
+    <p><strong>Quick tip:</strong> Email is the fastest way to reach me.</p>
+  </div>
+</section>
 
 <footer>
-  <p>© 2025 Your Name. All rights reserved.</p>
+  <p>© 2025 Benjamin Beres. All rights reserved.</p>
 </footer>
 
 </body>
 </html>
-
