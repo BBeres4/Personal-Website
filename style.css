@@ -354,4 +354,112 @@ footer {
   }
 }
 
+/* ================= PROJECTS PAGE ONLY ================= */
+.page-projects .projects-hero {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.page-projects .projects-hero h1 {
+  font-size: 46px;
+  margin-bottom: 10px;
+}
+
+.page-projects .projects-hero p {
+  font-size: 18px;
+  color: #666;
+  max-width: 700px;
+}
+
+.page-projects .projects-grid--new {
+  margin-top: 30px;
+  gap: 26px;
+}
+
+.page-projects .project-card--new {
+  position: relative;
+  border: 1px solid #f0f0f0;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-projects .project-card--new:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 18px 38px rgba(0,0,0,0.12);
+}
+
+.page-projects .project-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.page-projects .project-badge {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #f1f4f9;
+  color: #333;
+  font-weight: 600;
+}
+
+.page-projects .project-link {
+  font-size: 13px;
+  color: #00aaff;
+  font-weight: 700;
+}
+
+.page-projects .project-card--new h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #222;
+  line-height: 1.25;
+}
+
+.page-projects .project-card--new p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 14px;
+}
+
+.page-projects .project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto; /* pushes tags to bottom for clean alignment */
+}
+
+.page-projects .project-tags span {
+  background: #eef2f7;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12.5px;
+  color: #333;
+  transition: 0.2s ease;
+}
+
+.page-projects .project-card--new:hover .project-tags span {
+  background: #e8f6ff;
+}
+
+/* Featured accent */
+.page-projects .project-card--new:first-child {
+  border: 1px solid rgba(0,170,255,0.25);
+  background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .page-projects .projects-hero h1 {
+    font-size: 40px;
+  }
+}
+
+
 
