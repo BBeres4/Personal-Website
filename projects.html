@@ -6,10 +6,12 @@
   <title>Projects - Myself</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body class="page-projects">
 
 <header>
   <div class="logo">Myself</div>
+
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -19,52 +21,127 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-     <div class="header-icons">
-      <a href="https://www.linkedin.com/in/benjamin-beres-11761126a/"><img src="images/linkedin.png" alt="LinkedIn" /></a>
-      <a href="https://github.com/BBeres4"><img src="images/github.png" alt="Github" /></a>
-    </div>
+
+  <div class="header-icons">
+    <a href="https://www.linkedin.com/in/benjamin-beres-11761126a/" target="_blank" rel="noopener">
+      <img src="images/linkedin.png" alt="LinkedIn" />
+    </a>
+    <a href="https://github.com/BBeres4" target="_blank" rel="noopener">
+      <img src="images/github.png" alt="Github" />
+    </a>
+  </div>
 </header>
 
-<section class="content">
-  <h1>My Projects</h1>
-  <p>Here are some of the projects I’ve worked on:</p>
+<section class="content projects">
+  <div class="projects-hero">
+    <h1>My Projects</h1>
+    <p>Selected work across analytics, software, finance modeling, and databases.</p>
+  </div>
 
-  <div class="projects-grid">
-      <a href="https://nbaplayeranalytics.streamlit.app/" class="project-card">
+  <div class="projects-grid projects-grid--new">
+
+    <!-- NBA -->
+    <a href="https://nbaplayeranalytics.streamlit.app/" target="_blank" rel="noopener" class="project-card project-card--new">
+      <div class="project-top">
+        <span class="project-badge">Featured</span>
+        <span class="project-link">Open →</span>
+      </div>
       <h2>NBA Player Analytics System</h2>
-      <p>I built a production-level NBA analytics dashboard using Python and Streamlit that applies machine learning, clustering, PCA, and custom ranking algorithms to transform raw player data into an interactive, multidimensional analysis platform.</p>
-    </a>
-    <a href="projects/project1.html" class="project-card">
-      <h2>OpenWeatherMap API</h2>
-      <p>This website is a simple weather app that uses the OpenWeatherMap API to let users enter a city, state, and country and view the current conditions and a 5-day forecast in Fahrenheit.</p>
-    </a>
-    <a href="projects/DCF Model.xlsx" class="project-card">
-      <h2>DCF Model</h2>
-      <p>This model estimates a company’s intrinsic value by forecasting future cash flows and discounting them back to today to show what the business is truly worth. (Excel file).</p>
-    </a>
-    <a href="projects/LBO Model.xlsx" class="project-card">
-      <h2>LBO Model</h2>
-      <p>This model analyzes a leveraged buyout by projecting cash flows, debt repayment, and investor returns to show how profitable a debt-funded acquisition could be. (Excel File)</p>
-    </a>
-    <a href="project5.html" class="project-card">
-      <h2>Personal Budget App</h2>
-      <p>This app helps users manage monthly expenses by categorizing spending, tracking budgets, and visualizing financial habits through charts.</p>
+      <p>
+        Production-level dashboard using Python + Streamlit with ML clustering, PCA similarity mapping,
+        and custom weighted rankings for deep player analysis.
+      </p>
+      <div class="project-tags">
+        <span>Python</span><span>Streamlit</span><span>ML</span><span>PCA</span><span>Clustering</span>
+      </div>
     </a>
 
-    <a href="library_database.sql" class="project-card">
+    <!-- Weather -->
+    <a href="projects/project1.html" class="project-card project-card--new">
+      <div class="project-top">
+        <span class="project-badge">Web</span>
+        <span class="project-link">View →</span>
+      </div>
+      <h2>OpenWeatherMap API App</h2>
+      <p>
+        Weather app that calls OpenWeatherMap to display current conditions and a 5-day forecast
+        based on user location input.
+      </p>
+      <div class="project-tags">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>API</span>
+      </div>
+    </a>
+
+    <!-- DCF -->
+    <a href="projects/DCF%20Model.xlsx" class="project-card project-card--new">
+      <div class="project-top">
+        <span class="project-badge">Finance</span>
+        <span class="project-link">Download →</span>
+      </div>
+      <h2>DCF Valuation Model</h2>
+      <p>
+        Intrinsic valuation model forecasting free cash flows and discounting to present value
+        to estimate enterprise value.
+      </p>
+      <div class="project-tags">
+        <span>Excel</span><span>DCF</span><span>Valuation</span><span>Finance</span>
+      </div>
+    </a>
+
+    <!-- LBO -->
+    <a href="projects/LBO%20Model.xlsx" class="project-card project-card--new">
+      <div class="project-top">
+        <span class="project-badge">Finance</span>
+        <span class="project-link">Download →</span>
+      </div>
+      <h2>LBO Model</h2>
+      <p>
+        Leverage buyout model projecting cash flows, debt paydown, and investor IRR to evaluate
+        acquisition performance.
+      </p>
+      <div class="project-tags">
+        <span>Excel</span><span>LBO</span><span>IRR</span><span>Cash Flow</span>
+      </div>
+    </a>
+
+    <!-- Budget -->
+    <a href="project5.html" class="project-card project-card--new">
+      <div class="project-top">
+        <span class="project-badge">App</span>
+        <span class="project-link">View →</span>
+      </div>
+      <h2>Personal Budget App</h2>
+      <p>
+        Budgeting tool to categorize spending, track monthly limits, and visualize trends
+        with charts and summaries.
+      </p>
+      <div class="project-tags">
+        <span>UI</span><span>Charts</span><span>Tracking</span>
+      </div>
+    </a>
+
+    <!-- SQL -->
+    <a href="library_database.sql" class="project-card project-card--new">
+      <div class="project-top">
+        <span class="project-badge">Database</span>
+        <span class="project-link">Download →</span>
+      </div>
       <h2>SQL Sample Database</h2>
-      <p>This project includes a sample SQL database and queries demonstrating joins, aggregations, and data analysis for practice and learning.</p>
+      <p>
+        Sample schema + queries demonstrating joins, aggregations, and analysis patterns
+        for practice and learning.
+      </p>
+      <div class="project-tags">
+        <span>SQL</span><span>Joins</span><span>Aggregations</span><span>Database</span>
+      </div>
     </a>
 
   </div>
 </section>
 
 <footer>
-  <p>© 2025 Your Name. All rights reserved.</p>
+  <p>© 2025 Benjamin Beres. All rights reserved.</p>
 </footer>
 
 </body>
 </html>
-
-
-
