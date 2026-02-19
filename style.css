@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   color: #333;
@@ -76,26 +81,38 @@ nav ul li a.active {
   opacity: 0.8;
 }
 
-/* ================= CONTENT ================= */
+/* ================= CONTENT (GLOBAL) ================= */
 .content {
   padding: 80px 50px;
   max-width: 1100px;
   margin: auto;
 }
 
+/* All page titles (About Me, Projects, etc.) */
 .content h1 {
-  font-size: 40px;
-  margin-bottom: 25px;
+  font-size: 46px;
+  margin-bottom: 12px;
   color: #222;
+  text-align: center; /* ✅ centers page heading for every page */
 }
 
+/* The intro paragraph directly under the H1 */
+.content > p {
+  font-size: 18px;
+  color: #666;
+  text-align: center;      /* ✅ centers intro text */
+  max-width: 750px;        /* ✅ prevents awkward wrapping */
+  margin: 0 auto 30px auto;/* ✅ centers the block */
+}
+
+/* Any other paragraph inside content (not the intro) */
 .content p {
   font-size: 18px;
   margin-bottom: 20px;
   color: #555;
 }
 
-/* ================= HERO (Home Only) ================= */
+/* ================= HERO (HOME) ================= */
 .hero {
   display: flex;
   align-items: center;
@@ -111,11 +128,13 @@ nav ul li a.active {
 .hero-text h1 {
   font-size: 54px;
   margin-bottom: 20px;
+  text-align: left; /* Home hero heading should stay left */
 }
 
 .hero-text p {
   font-size: 20px;
   margin-bottom: 30px;
+  text-align: left;
 }
 
 .hero-text .btn {
@@ -141,12 +160,12 @@ nav ul li a.active {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
 
-/* ================= PROJECTS ================= */
+/* ================= PROJECTS (BASE) ================= */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
-  margin-top: 40px;
+  margin-top: 35px;
 }
 
 .project-card {
@@ -175,12 +194,11 @@ footer {
 }
 
 /* ================= EDUCATION PAGE ONLY ================= */
-
 .page-education .education-list {
   position: relative;
   display: grid;
   gap: 30px;
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 .page-education .education-list::before {
@@ -243,21 +261,6 @@ footer {
 .page-education .course-grid span:hover {
   background: #00aaff;
   color: white;
-}
-
-@media (max-width: 900px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .page-education .education-list::before {
-    display: none;
-  }
-
-  .page-education .edu-item {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* ================= CONTACT PAGE ONLY ================= */
@@ -347,28 +350,14 @@ footer {
   color: #555;
 }
 
-/* Mobile */
-@media (max-width: 600px) {
-  .page-contact .contact-hero h1 {
-    font-size: 40px;
-  }
-}
-
-/* ================= PROJECTS PAGE ONLY ================= */
+/* ================= PROJECTS PAGE ONLY (UPGRADED CARDS) ================= */
 .page-projects .projects-hero {
   text-align: center;
   margin-bottom: 18px;
 }
 
-.page-projects .projects-hero h1 {
-  font-size: 46px;
-  margin-bottom: 10px;
-}
-
 .page-projects .projects-hero p {
-  font-size: 18px;
-  color: #666;
-  max-width: 700px;
+  margin: 0 auto;
 }
 
 .page-projects .projects-grid--new {
@@ -415,24 +404,11 @@ footer {
   font-weight: 700;
 }
 
-.page-projects .project-card--new h2 {
-  font-size: 22px;
-  margin-bottom: 10px;
-  color: #222;
-  line-height: 1.25;
-}
-
-.page-projects .project-card--new p {
-  font-size: 15px;
-  color: #666;
-  margin-bottom: 14px;
-}
-
 .page-projects .project-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: auto; /* pushes tags to bottom for clean alignment */
+  margin-top: auto;
 }
 
 .page-projects .project-tags span {
@@ -448,17 +424,9 @@ footer {
   background: #e8f6ff;
 }
 
-/* Featured accent */
 .page-projects .project-card--new:first-child {
   border: 1px solid rgba(0,170,255,0.25);
   background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
-}
-
-/* Mobile */
-@media (max-width: 700px) {
-  .page-projects .projects-hero h1 {
-    font-size: 40px;
-  }
 }
 
 /* ================= ABOUT PAGE ONLY ================= */
@@ -467,16 +435,8 @@ footer {
   margin-bottom: 26px;
 }
 
-.page-about .about-hero h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
-  color: #222;
-}
-
 .page-about .about-hero p {
-  font-size: 18px;
-  color: #666;
-  max-width: 780px;
+  margin: 0 auto; /* ✅ fixes the “second line not centered” issue */
 }
 
 .page-about .about-grid {
@@ -516,23 +476,6 @@ footer {
   font-weight: 700;
 }
 
-.page-about .about-icon {
-  font-size: 22px;
-}
-
-.page-about .about-card h2 {
-  font-size: 22px;
-  margin-bottom: 10px;
-  color: #222;
-}
-
-.page-about .about-card p {
-  font-size: 15.5px;
-  color: #666;
-  margin-bottom: 12px;
-  line-height: 1.7;
-}
-
 .page-about .about-chips {
   display: flex;
   flex-wrap: wrap;
@@ -549,23 +492,8 @@ footer {
   transition: 0.2s ease;
 }
 
-.page-about .about-chips span:hover {
-  background: #e8f6ff;
-}
-
 .page-about .about-section {
   margin-top: 46px;
-}
-
-.page-about .about-section h2 {
-  font-size: 34px;
-  margin-bottom: 10px;
-  color: #222;
-}
-
-.page-about .about-section p {
-  color: #666;
-  margin-bottom: 18px;
 }
 
 .page-about .about-skill-grid {
@@ -583,33 +511,55 @@ footer {
   box-shadow: 0 10px 25px rgba(0,0,0,0.07);
 }
 
-.page-about .skill-card h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #222;
-}
-
-.page-about .skill-card ul {
-  padding-left: 18px;
-  color: #555;
-  font-size: 15px;
-}
-
-.page-about .skill-card li {
-  margin-bottom: 7px;
-}
-
-/* Responsive */
+/* ================= RESPONSIVE (GLOBAL) ================= */
 @media (max-width: 900px) {
-  .page-about .about-grid {
+  header {
+    padding: 12px 18px;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  .content {
+    padding: 60px 20px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 30px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-text h1,
+  .hero-text p {
+    text-align: center;
+  }
+
+  .page-education .education-list::before {
+    display: none;
+  }
+
+  .page-education .edu-item {
     grid-template-columns: 1fr;
   }
 
-  .page-about .about-hero h1 {
-    font-size: 42px;
+  .page-about .about-grid {
+    grid-template-columns: 1fr;
   }
 }
 
+@media (max-width: 600px) {
+  .content h1 {
+    font-size: 40px;
+  }
 
-
-
+  .header-icons img {
+    width: 32px;
+    height: 32px;
+  }
+}
