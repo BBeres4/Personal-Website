@@ -283,7 +283,7 @@ footer {
 
 .page-contact .contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 22px;
   margin-top: 30px;
 }
@@ -568,5 +568,6 @@ footer {
     height: 32px;
   }
 }
+
 
 
