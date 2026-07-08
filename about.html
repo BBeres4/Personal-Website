@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - Myself</title>
+  <title>About — Benjamin Beres</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="page-about">
 
 <header>
-  <div class="logo">Myself</div>
+  <div class="logo">Benjamin Beres</div>
 
   <nav>
     <ul>
@@ -23,39 +23,20 @@
   </nav>
 
   <div class="header-icons">
-      <a href="https://www.linkedin.com/in/benjamin-beres-11761126a/"><img src="images/linkedin.png" alt="LinkedIn" /></a>
-      <a href="https://github.com/BBeres4"><img src="images/github.png" alt="Github" /></a>
-    </div>
+    <a href="https://www.linkedin.com/in/benjamin-beres-11761126a/" target="_blank" rel="noopener"><img src="images/linkedin.png" alt="LinkedIn" /></a>
+    <a href="https://github.com/BBeres4" target="_blank" rel="noopener"><img src="images/github.png" alt="Github" /></a>
+  </div>
 </header>
 
 <section class="content about">
 
   <div class="about-hero">
-    <h1>About Me</h1>
-    <p>Computer Information Systems student focused on building clean, useful software and data-driven products.</p>
-  </div>
+    <div class="about-hero-text">
+      <span class="hero-eyebrow">About</span>
+      <h1>Building things that <em>work</em> — and understanding why.</h1>
+      <p>Computer Information Systems graduate focused on building clean, useful software and data-driven products — and on solving the technical problems that come up along the way.</p>
 
-  <div class="about-grid">
-
-    <!-- Personal -->
-    <div class="about-card">
-      <div class="about-card-top">
-        <span class="about-badge">Personal</span>
-        <span class="about-icon">🙂</span>
-      </div>
-
-      <h2>Who I am</h2>
-      <p>
-        I’m Benjamin Beres — someone who loves turning ideas into real products. I’m naturally curious,
-        I enjoy problem-solving, and I’m happiest when I’m building something that feels clean, simple,
-        and actually helpful to people.
-      </p>
-      <p>
-        Outside of school/projects, I’m big on staying disciplined and improving over time — whether it’s learning
-        a new tool, optimizing a project, or sharpening my communication and teamwork.
-      </p>
-
-      <div class="about-chips">
+      <div class="about-chips about-chips--hero">
         <span>Curious</span>
         <span>Consistent</span>
         <span>Team-first</span>
@@ -63,22 +44,58 @@
       </div>
     </div>
 
-    <!-- Education/Field -->
-    <div class="about-card">
+    <div class="hero-image">
+      <div class="frame">
+        <img src="images/your-photo.png" alt="Benjamin Beres" />
+      </div>
+      <div class="tag">KENT STATE · CIS '26</div>
+    </div>
+  </div>
+
+  <div class="about-grid">
+
+    <!-- Personal -->
+    <div class="about-card about-card--personal">
       <div class="about-card-top">
-        <span class="about-badge">Education & Field</span>
+        <span class="about-badge">Personal</span>
+        <span class="about-icon">🙂</span>
+      </div>
+
+      <h2>Who I am</h2>
+      <p>
+        I'm Benjamin Beres — someone who loves turning ideas into real products. I'm naturally curious,
+        I enjoy problem-solving, and I'm happiest when I'm building something that feels clean, simple,
+        and actually helpful to people.
+      </p>
+      <p>
+        I'm also the person people come to when something breaks. I like tracing an issue back to its root
+        cause, fixing it, and then documenting it so it doesn't happen again. That mix of building and
+        troubleshooting is what drew me toward information systems in the first place.
+      </p>
+      <p>
+        Outside of school and projects, I'm big on staying disciplined and improving over time — whether it's learning
+        a new tool, optimizing a project, or sharpening my communication and teamwork. I grew up playing varsity golf
+        and basketball, and that same competitiveness and routine carries over into how I approach my work today.
+      </p>
+    </div>
+
+    <!-- Education/Field -->
+    <div class="about-card about-card--education">
+      <div class="about-card-top">
+        <span class="about-badge">Education &amp; Field</span>
         <span class="about-icon">🎓</span>
       </div>
 
-      <h2>What I study & build</h2>
+      <h2>What I study &amp; build</h2>
       <p>
-        I’m studying Computer Information Systems, which puts me at the intersection of technology and business.
-        I’ve built projects across web development, analytics dashboards, automation, and database work — with a growing
+        I studied Computer Information Systems at Kent State, which put me at the intersection of technology and business.
+        I've built projects across web development, analytics dashboards, automation, and database work — with a growing
         focus on data analytics and decision-support tools.
       </p>
       <p>
-        My strengths are using Python/SQL to analyze data, building dashboards that explain insights clearly,
-        and developing full-stack style projects when needed (Flask, React, APIs).
+        My strengths are using Python and SQL to analyze data, building dashboards that explain insights clearly,
+        and developing full-stack projects when needed (Flask, React, APIs). I also work comfortably in database
+        and systems design, from ER diagrams and UML modeling to troubleshooting the systems that keep data flowing.
       </p>
 
       <div class="about-chips">
@@ -89,58 +106,119 @@
         <span>Excel</span>
         <span>Flask</span>
         <span>React</span>
+        <span>MySQL</span>
+        <span>Oracle</span>
+        <span>ER Diagrams</span>
+      </div>
+    </div>
+
+    <!-- Work Experience -->
+    <div class="about-card about-card--experience">
+      <div class="about-card-top">
+        <span class="about-badge">Experience</span>
+        <span class="about-icon">🛠️</span>
+      </div>
+
+      <h2>What I do at work</h2>
+      <p class="about-card-meta">Data Analyst / IT Support · Dependable Stamping Co. · Since Summer 2021</p>
+      <p>
+        I build and maintain Excel dashboards with pivot tables and visualizations to track production and
+        operational performance, and I keep the Steel Viking manufacturing system's data clean, validated,
+        and reliable.
+      </p>
+      <p>
+        On the support side, I troubleshoot hardware, software, and system issues across departments — tracing
+        problems to their root cause and restoring functionality quickly — and I collaborate with cross-functional
+        teams on reporting improvements and system updates.
+      </p>
+
+      <div class="about-chips">
+        <span>Data Analysis</span>
+        <span>IT Support</span>
+        <span>Excel Dashboards</span>
+        <span>System Troubleshooting</span>
+      </div>
+    </div>
+
+    <!-- Beyond Work -->
+    <div class="about-card about-card--beyond">
+      <div class="about-card-top">
+        <span class="about-badge">Beyond the Desk</span>
+        <span class="about-icon">⛳</span>
+      </div>
+
+      <h2>Outside of work</h2>
+      <p>
+        I stay involved on campus through the Business Analytics Club, the Information Systems Student Organization,
+        and the National Society of Leadership and Success — spaces where I get to trade ideas with other students
+        who care about the same things I do.
+      </p>
+      <p>
+        Away from the keyboard, I'm usually on a golf course or a basketball court. Both are a good reminder that
+        consistency and repetition beat one flash of brilliance — a lesson that applies just as well to code and
+        spreadsheets as it does to a jump shot.
+      </p>
+
+      <div class="about-chips">
+        <span>Golf</span>
+        <span>Basketball</span>
+        <span>Student Orgs</span>
+        <span>Leadership</span>
       </div>
     </div>
 
   </div>
 
+  <!-- Pull Quote -->
+  <div class="about-quote">
+    <p>"Challenge yourself to be great and always, always, always work towards improving upon what you have achieved…"</p>
+    <span class="about-quote-attr">— Michael Jordan</span>
+  </div>
+
   <!-- Skills Section -->
   <div class="about-section">
-    <h2><center></center>Professional Skills</h2></center>
-    <p><center></center>Tools and strengths I use to build projects from idea → product.</p></center>
+    <span class="hero-eyebrow">Toolkit</span>
+    <h2>Professional Skills</h2>
+    <p>Tools and strengths I use to build projects from idea to product.</p>
 
-    <div class="about-skill-grid">
-
-      <div class="skill-card">
-        <h3>Programming & Development</h3>
-        <ul>
-          <li>HTML, CSS, JavaScript</li>
-          <li>Python, SQL</li>
-          <li>React, Flask</li>
-          <li>Git / GitHub</li>
-        </ul>
-      </div>
-
-      <div class="skill-card">
-        <h3>Data & Analytics</h3>
-        <ul>
-          <li>Data cleaning & transformation</li>
-          <li>Dashboards (Streamlit, Power BI)</li>
-          <li>Excel modeling + analysis</li>
-          <li>Databases (MySQL, Oracle)</li>
-        </ul>
-      </div>
-
-      <div class="skill-card">
-        <h3>Professional Skills</h3>
-        <ul>
-          <li>Problem-solving & communication</li>
-          <li>Agile / collaboration</li>
-          <li>Documentation & clarity</li>
-          <li>Attention to detail</li>
-        </ul>
-      </div>
-
+    <div class="skills-line">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Python</span>
+      <span>SQL</span>
+      <span>React</span>
+      <span>Flask</span>
+      <span>Object-Oriented Programming</span>
+      <span>Git / Version Control</span>
+      <span>Data Cleaning &amp; Transformation</span>
+      <span>Streamlit</span>
+      <span>Power BI</span>
+      <span>Power Automate</span>
+      <span>Excel Modeling</span>
+      <span>MySQL</span>
+      <span>Oracle</span>
+      <span>ER Diagrams</span>
+      <span>UML Modeling (Astah)</span>
+      <span>System Architecture</span>
+      <span>APIs &amp; Testing</span>
+      <span>Application Troubleshooting</span>
+      <span>Problem-Solving</span>
+      <span>Cross-Team Collaboration</span>
+      <span>Documentation</span>
+      <span>Attention to Detail</span>
     </div>
   </div>
 
 </section>
 
 <footer>
-  <p>© 2025 Benjamin Beres. All rights reserved.</p>
+  <div class="footer-row">
+    <span>© 2025 Benjamin Beres</span>
+    <span>Kirtland, Ohio · <a href="mailto:benberes4@gmail.com">benberes4@gmail.com</a></span>
+    <span>Built with HTML, CSS &amp; a spreadsheet habit</span>
+  </div>
 </footer>
 
 </body>
 </html>
-
-
