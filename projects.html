@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects - Myself</title>
+  <title>Projects — Benjamin Beres</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="page-projects">
 
 <header>
-  <div class="logo">Myself</div>
+  <div class="logo">Benjamin Beres</div>
 
   <nav>
     <ul>
@@ -34,32 +34,48 @@
 
 <section class="content projects">
   <div class="projects-hero">
+    <span class="hero-eyebrow">Selected Work</span>
     <h1>My Projects</h1>
     <p>Selected work across analytics, software, finance modeling, and databases.</p>
+
+    <div class="projects-hero-stats">
+      <div>
+        <span class="stat-num">6</span>
+        <span class="stat-label">PROJECTS</span>
+      </div>
+      <div>
+        <span class="stat-num">4</span>
+        <span class="stat-label">DISCIPLINES</span>
+      </div>
+      <div>
+        <span class="stat-num">2</span>
+        <span class="stat-label">FINANCE MODELS</span>
+      </div>
+    </div>
   </div>
 
-  <div class="projects-grid projects-grid--new">
+  <!-- Featured Project -->
+  <a href="https://nbaplayeranalytics.streamlit.app/" target="_blank" rel="noopener" class="project-featured">
+    <div class="project-featured-top">
+      <span class="project-badge project-badge--gold">Featured</span>
+      <span class="project-link project-link--lg">Open Live App →</span>
+    </div>
+    <h2>NBA Player Analytics System</h2>
+    <p>
+      A production-level dashboard built with Python and Streamlit — combining ML clustering, PCA
+      similarity mapping, and custom weighted rankings to power deep, side-by-side player analysis.
+    </p>
+    <div class="project-tags">
+      <span>Python</span><span>Streamlit</span><span>ML</span><span>PCA</span><span>Clustering</span>
+    </div>
+  </a>
 
-    <!-- NBA -->
-    <a href="https://nbaplayeranalytics.streamlit.app/" target="_blank" rel="noopener" class="project-card project-card--new">
-      <div class="project-top">
-        <span class="project-badge">Featured</span>
-        <span class="project-link">Open →</span>
-      </div>
-      <h2>NBA Player Analytics System</h2>
-      <p>
-        Production-level dashboard using Python + Streamlit with ML clustering, PCA similarity mapping,
-        and custom weighted rankings for deep player analysis.
-      </p>
-      <div class="project-tags">
-        <span>Python</span><span>Streamlit</span><span>ML</span><span>PCA</span><span>Clustering</span>
-      </div>
-    </a>
+  <div class="projects-grid projects-grid--new">
 
     <!-- Weather -->
     <a href="projects/project1.html" class="project-card project-card--new">
       <div class="project-top">
-        <span class="project-badge">Web</span>
+        <span class="project-badge project-badge--web">Web</span>
         <span class="project-link">View →</span>
       </div>
       <h2>OpenWeatherMap API App</h2>
@@ -75,7 +91,7 @@
     <!-- DCF -->
     <a href="projects/DCF%20Model.xlsx" class="project-card project-card--new">
       <div class="project-top">
-        <span class="project-badge">Finance</span>
+        <span class="project-badge project-badge--finance">Finance</span>
         <span class="project-link">Download →</span>
       </div>
       <h2>DCF Valuation Model</h2>
@@ -91,12 +107,12 @@
     <!-- LBO -->
     <a href="projects/LBO%20Model.xlsx" class="project-card project-card--new">
       <div class="project-top">
-        <span class="project-badge">Finance</span>
+        <span class="project-badge project-badge--finance">Finance</span>
         <span class="project-link">Download →</span>
       </div>
       <h2>LBO Model</h2>
       <p>
-        Leverage buyout model projecting cash flows, debt paydown, and investor IRR to evaluate
+        Leveraged buyout model projecting cash flows, debt paydown, and investor IRR to evaluate
         acquisition performance.
       </p>
       <div class="project-tags">
@@ -104,15 +120,16 @@
       </div>
     </a>
 
-    <!-- Budget -->
-    <a href="https://github.com/BBeres4/pulse-analytics" class="project-card project-card--new">
+    <!-- Pulse -->
+    <a href="https://github.com/BBeres4/pulse-analytics" target="_blank" rel="noopener" class="project-card project-card--new">
       <div class="project-top">
-        <span class="project-badge">App</span>
+        <span class="project-badge project-badge--app">App</span>
         <span class="project-link">View →</span>
       </div>
       <h2>Pulse Analytics</h2>
       <p>
-        PulseAnalytics is a frontend-only analytics platform that lets users import event data and explore KPIs, trends, funnels, cohorts, segmentation, and alerts through a polished interactive dashboard.
+        Frontend-only analytics platform that lets users import event data and explore KPIs, trends,
+        funnels, cohorts, segmentation, and alerts through a polished interactive dashboard.
       </p>
       <div class="project-tags">
         <span>UI</span><span>Charts</span><span>Tracking</span>
@@ -120,14 +137,14 @@
     </a>
 
     <!-- SQL -->
-    <a href="https://github.com/BBeres4/SampleSQL" class="project-card project-card--new">
+    <a href="https://github.com/BBeres4/SampleSQL" target="_blank" rel="noopener" class="project-card project-card--new">
       <div class="project-top">
-        <span class="project-badge">Database</span>
+        <span class="project-badge project-badge--database">Database</span>
         <span class="project-link">Download →</span>
       </div>
       <h2>SQL Sample Database</h2>
       <p>
-        Sample schema + queries demonstrating joins, aggregations, and analysis patterns
+        Sample schema and queries demonstrating joins, aggregations, and analysis patterns
         for practice and learning.
       </p>
       <div class="project-tags">
@@ -139,10 +156,12 @@
 </section>
 
 <footer>
-  <p>© 2025 Benjamin Beres. All rights reserved.</p>
+  <div class="footer-row">
+    <span>© 2025 Benjamin Beres</span>
+    <span>Kirtland, Ohio · <a href="mailto:benberes4@gmail.com">benberes4@gmail.com</a></span>
+    <span>Built with HTML, CSS &amp; a spreadsheet habit</span>
+  </div>
 </footer>
 
 </body>
 </html>
-
-
